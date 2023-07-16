@@ -1,0 +1,142 @@
+  <!-- <section>
+        <h1>Product Page</h1>
+        <div class="product">
+          <img src="product-image.jpg" alt="Product Image">
+          <h2>Product Name</h2>
+          <p class="price">$9.99</p>
+          <div class="quantity">
+            <button onclick="decreaseQuantity()">-</button>
+            <span id="quantity">1</span>
+            <button onclick="increaseQuantity()">+</button>
+          </div>
+          <button onclick="addToCart()">Add to Cart</button>
+        </div>
+    </section>
+     -->
+
+
+
+     <!-- <!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Cart</h1>
+    <div id="cartContainer"></div>
+
+  <script src="product.js"></script>
+</body>
+</html> -->
+
+
+
+
+<!-- .product {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .quantity button {
+    font-weight: bold;
+    padding: 5px 10px;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .cart-item img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+  }
+  
+  .cart-item .quantity {
+    margin-left: auto;
+  }
+  
+  .cart-item .delete-btn {
+    margin-left: 10px;
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+   -->
+
+
+<!-- 
+   var quantity = 1;
+
+   function addToCart() {
+     var product = {
+       name: "Product Name",
+       price: 9.99,
+       quantity: quantity
+     };
+   
+     var cart = JSON.parse(localStorage.getItem("cart")) || [];
+     cart.push(product);
+     localStorage.setItem("cart", JSON.stringify(cart));
+   }
+   
+   function increaseQuantity() {
+     quantity++;
+     document.getElementById("quantity").innerText = quantity;
+   }
+   
+   function decreaseQuantity() {
+     if (quantity > 1) {
+       quantity--;
+       document.getElementById("quantity").innerText = quantity;
+     }
+   } -->
+
+
+
+   
+<!-- function updateCart() {
+    var cartContainer = document.getElementById("cartContainer");
+    cartContainer.innerHTML = "";
+  
+    var cart = JSON.parse(localStorage.getItem("cart")) || [];
+    var totalPrice = 0;
+  
+    for (var i = 0; i < cart.length; i++) {
+      var product = cart[i];
+      var cartItem = document.createElement("div");
+      cartItem.className = "cart-item";
+      var itemTotalPrice = product.price * product.quantity;
+      totalPrice += itemTotalPrice;
+  
+      cartItem.innerHTML = `
+        <img src="product-image.jpg" alt="Product Image">
+        <p>${product.name} - $${product.price} x ${product.quantity} = $${itemTotalPrice.toFixed(2)}</p>
+        <button class="delete-btn" onclick="deleteItem(${i})">Delete</button>
+      `;
+      cartContainer.appendChild(cartItem);
+    }
+  
+    var totalPriceElement = document.createElement("p");
+    totalPriceElement.innerHTML = `<strong>Total Price: $${totalPrice.toFixed(2)}</strong>`;
+    cartContainer.appendChild(totalPriceElement);
+  }
+  
+  function deleteItem(index) {
+    var cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cart.splice(index, 1);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    updateCart();
+  }
+  
+  window.onload = updateCart;
+   -->
+
+
+

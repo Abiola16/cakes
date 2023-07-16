@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="gallery.css">
+        <!-- swiper link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- cdn icon link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- custom css file  -->
+</head>
+<body>
+    
+    <header class="header">
+        <div class="logoContent">
+            <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+            <!-- <h1 class="logoName">Sweet Cake </h1> -->
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="product.html">Product</a>
+            <!-- <a href="#blogs">blogs</a> -->
+            <a href="gallery.html">Gallery  </a>
+            <!-- <a href="cart.html">review</a> -->
+            <a href="contact.html">Contact</a>
+            <a href="cart.html"><i class='bx bx-shopping-bag'></i></a>
+        </nav>
+
+        <div class="icon">
+            <i class="fas fa-search" id="search"></i>
+            <i class="fas fa-bars" id="menu-bar"></i>
+        </div>
+
+        <div class="search">
+            <input type="text" name="" id="find" placeholder="searchhh here...." onkeyup="searchhh()">
+        </div>
+    </header>
+
+    <section id="page-header" class="about-header">
+        <h2 class="let">#our_gallery</h2>
+        <p>CHECK OUT OUR GALLERY, you would love to see it</p>
+    </section>  
+ 
+    <section class="gallery">
+	<div class="container">
+		<div class="row">
+			<div class="gallery-filter">
+				<span class="filter-item active" data-filter="all">all</span>
+				<span class="filter-item" data-filter="birthday">Birthday Cakes</span>
+				<span class="filter-item" data-filter="wedding">Wedding Cakes</span>
+				<span class="filter-item" data-filter="cupcakes">Cupcakes</span>
+			</div>
+		</div>
+		<div class="row">	
+            
+			<div class="gallery-item birthday">
+				<div class="gallery-item-inner">
+					<img src="img/gallery/birthday/b1.png" alt="birthday">
+				</div>
+			</div>
+			
+			<div class="gallery-item wedding">
+				<div class="gallery-item-inner">
+					<img src="img/gallery/wedding/w1.png" alt="wedding">
+				</div>
+			</div>
+	
+			<div class="gallery-item cupcakes">
+				<div class="gallery-item-inner">
+					<img src="img/gallery/cupcakes/c1.png" alt="cupcakes">
+				</div>
+			</div>
+            
+			<div class="gallery-item birthday">
+				<div class="gallery-item-inner">
+					<img src="img/gallery/birthday/b2.png" alt="birthday">
+				</div>
+			</div>
+			
+			<div class="gallery-item wedding">
+				<div class="gallery-item-inner">
+					<img src="img/gallery/wedding/w2.png" alt="wedding">
+				</div>
+			</div>
+	
+			<div class="gallery-item cupcakes">
+				<div class="gallery-item-inner">
+					<img src="img/gallery/cupcakes/c2.png" alt="cupcakes">
+				</div>
+			</div>
+            
+			<div class="gallery-item birthday">
+				<div class="gallery-item-inner">
+					<img src="img/gallery/birthday/b3.png" alt="birthday">
+				</div>
+			</div>
+			
+			<div class="gallery-item wedding">
+				<div class="gallery-item-inner">
+					<img src="img/gallery/wedding/w3.png" alt="wedding">
+				</div>
+			</div>
+	
+			<div class="gallery-item cupcakes">
+				<div class="gallery-item-inner">
+					<img src="img/gallery/cupcakes/c3.png" alt="cupcakes">
+				</div>
+			</div>
+            
+			<!-- <div class="gallery-item birthday">
+				<div class="gallery-item-inner">
+					<img src="img/gallery/birthday/b4.png" alt="birthday">
+				</div>
+			</div> -->
+			
+			<div class="gallery-item wedding">
+				<div class="gallery-item-inner">
+					<img src="img/gallery/wedding/w4.png" alt="wedding">
+				</div>
+			</div>
+	
+			<div class="gallery-item cupcakes">
+				<div class="gallery-item-inner">
+					<img src="img/gallery/cupcakes/c4.png" alt="cupcakes">
+				</div>
+			</div>
+            
+			<div class="gallery-item birthday">
+				<div class="gallery-item-inner">
+					<img src="img/gallery/birthday/b5.png" alt="birthday">
+				</div>
+			</div>
+			
+			<div class="gallery-item wedding">
+				<div class="gallery-item-inner">
+					<img src="img/gallery/wedding/w5.png" alt="wedding">
+				</div>
+			</div>
+	
+			<div class="gallery-item cupcakes">
+				<div class="gallery-item-inner">
+					<img src="img/gallery/cupcakes/c5.png" alt="cupcakes">
+				</div>
+			</div>
+            
+			<div class="gallery-item birthday">
+				<div class="gallery-item-inner">
+					<img src="img/gallery/birthday/b6.png" alt="birthday">
+				</div>
+			</div>
+			
+			<div class="gallery-item wedding">
+				<div class="gallery-item-inner">
+					<img src="img/gallery/wedding/w6.png" alt="wedding">
+				</div>
+			</div>
+	
+			<div class="gallery-item cupcakes">
+				<div class="gallery-item-inner">
+					<img src="img/gallery/cupcakes/c6.png" alt="cupcakes">
+				</div>
+			</div>
+            
+			<div class="gallery-item birthday">
+				<div class="gallery-item-inner">
+					<img src="img/gallery/birthday/b7.png" alt="birthday">
+				</div>
+			</div>
+			
+			<div class="gallery-item wedding">
+				<div class="gallery-item-inner">
+					<img src="img/gallery/wedding/w7.png" alt="wedding">
+				</div>
+			</div>
+	
+			<div class="gallery-item cupcakes">
+				<div class="gallery-item-inner">
+					<img src="img/gallery/cupcakes/c7.png" alt="cupcakes">
+				</div>
+			</div>
+
+            <div class="gallery-item wedding">
+				<div class="gallery-item-inner">
+					<img src="img/gallery/wedding/w8.png" alt="wedding">
+				</div>
+			</div>
+			
+		</div>
+	</div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1" >
+    <div class="newstext">
+        <h4>Sign Up For Newsletters</h4>
+        <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+    </div>
+    <div class="form">
+        <input type="text" placeholder="Your email address">
+        <button class="normal">Sign Up</button>
+    </div>
+    </section>
+
+
+
+    <footer class="footer" id="contact">
+    <div class="box-container">
+        <div class="mainBox">
+            <div class="content">
+                <a href="#"><img class="fl" src="img/logo.png" alt=""></a>
+                <!-- <h1 class="logoName"> Sweet Cake </h1> -->
+            </div>
+
+            <p>Welcome to our world of culinary delights, where passion meets flavor. We are dedicated to crafting exceptional culinary experiences that leave a lasting impression</p>
+
+        </div>
+        <div class="box">
+            <h3>Quick link</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i>Home</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i>product</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i>gallery</a>
+            <!-- <a href="#"> <i class="fas fa-arrow-right"></i>review</a> -->
+            <a href="#"> <i class="fas fa-arrow-right"></i>contact</a>
+
+        </div>
+        <div class="box">
+            <h3>Extra link</h3>
+            <a href="#about"> <i class="fas fa-arrow-right"></i>About Us</a>
+            <a href="#reviews"> <i class="fas fa-arrow-right"></i>Reviews</a>
+            <a href="#blogs"> <i class="fas fa-arrow-right"></i>Blogs</a>
+            <a href="#order"> <i class="fas fa-arrow-right"></i>Order</a>
+            <!-- <a href="#"> <i class="fas fa-arrow-right"></i>our  services</a> -->
+        </div>
+        <div class="box">
+            <h3>Contact Info</h3>
+            <a href="#"> <i class="fas fa-phone"></i>+234 808 34 50646</a>
+            <a href="#"> <i class="fas fa-envelope"></i>cakeworld@gmail.com</a>
+
+        </div>
+
+    </div>
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <!-- <a href="#" class="fab fa-pinterest"></a> -->
+    </div>
+    <div class="credit">
+        created by <span>Cake World </span> |all rights reserved ! 
+    </div>
+    </footer>
+
+
+    <!-- swiper js link  -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="gallery.js"></script>
+</body>
+</html>
