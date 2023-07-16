@@ -23,13 +23,14 @@
         </div>
 
         <nav class="navbar">
-            <a href="index.html">Home</a>
+            <a href="login.html">Home</a>
             <a href="product.html">Product</a>
             <!-- <a href="#blogs">blogs</a> -->
-            <a href="gallery.html">Gallery  </a>
+            <a href="gallery.html" class="active">Gallery  </a>
             <!-- <a href="cart.html">review</a> -->
             <a href="contact.html">Contact</a>
             <a href="cart.html"><i class='bx bx-shopping-bag'></i></a>
+			<button id="signOutButton">Log Out</button>
         </nav>
 
         <div class="icon">
@@ -257,6 +258,138 @@
     </footer>
 
 
+	<script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+        import {
+            getAuth,
+            createUserWithEmailAndPassword,
+            signInWithEmailAndPassword,
+            onAuthStateChanged,
+            signOut
+        } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyDfgaJgiRGtwnKV7jJlB_dzX-IwS1jtYto",
+            authDomain: "new-auth-d70e1.firebaseapp.com",
+            projectId: "new-auth-d70e1",
+            storageBucket: "new-auth-d70e1.appspot.com",
+            messagingSenderId: "362454252972",
+            appId: "1:362454252972:web:2dd2945fae2d81b2454e09"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        const userEmail = document.querySelector("#userEmail");
+        const userPassword = document.querySelector("#userPassword");
+        const authForm = document.querySelector("#authForm");
+        const secretContent = document.querySelector("#secretContent");
+        const signUpButton = document.querySelector("#signUpButton");
+        const signInButton = document.querySelector("#signInButton");
+        const signOutButton = document.querySelector("#signOutButton");
+        const container = document.querySelector(".container");
+
+
+        // secretContent.style.display = 'none';
+
+        const userSignUp = async () => {
+            const signUpEmail = userEmail.value;
+            const signUpPassword = userPassword.value;
+            createUserWithEmailAndPassword(auth, signUpEmail, signUpPassword)
+                .then((userCredential) => {
+                    const user = userCredential.user;
+                    console.log(user);
+                    alert("Your account has been created");
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    console.log(errorCode + errorMessage)
+                })
+        }
+
+
+        const userSignIn = async () => {
+            const signInEmail = userEmail.value;
+            const signInPassword = userPassword.value;
+            signInWithEmailAndPassword(auth, signInEmail, signInPassword)
+                .then((userCredential) => {
+                    const user = userCredential.user;
+                    alert("You have sucsessfully logged in");
+                    //  window.location.href = "index.html";
+                })
+                // .catch((error) => {
+                //     const errorCode = error.code;
+                //     const errorMessage = error.message;
+                //     console.log(errorCode + errorMessage)
+                // })
+                .catch(function(error) {
+                // Handle login error
+                var errorCode = error.code;
+                if (errorCode === 'auth/wrong-password') {
+                alert("Incorrect password");
+                } else if (errorCode === 'auth/invalid-email') {
+                alert("Incorrect email");
+                } else {
+                alert(error.message);
+                }
+                });
+        }
+
+
+        const checkAuthState = async () => {
+            onAuthStateChanged(auth, user => {
+                if (user) {
+                    authForm.style.display = 'none';
+                    secretContent.style.display = 'block';
+                }
+                else {
+                    authForm.style.display = 'block';
+                    secretContent.style.display = 'none';
+                }
+            })
+        }
+
+        const userSignOut = async () => {
+            await signOut(auth);
+            window.location.href = "index.html";
+        }
+
+        checkAuthState();
+
+        signUpButton.addEventListener('click', userSignUp);
+        signInButton.addEventListener('click', userSignIn);
+        signOutButton.addEventListener('click', userSignOut);
+    </script>
+
+<script>
+
+	// let signUpButton = document.getElementById("signUpButton");
+	// let signInButton = document.getElementById("signInButton");
+	let nameField = document.getElementById("nameField");
+	let title = document.getElementById("title");
+
+
+	signInButton.onclick = function () {
+		// nameField.style.maxHeight = "0";
+		title.innerHTML = "Sign In";
+		signUpButton.classList.add("disable");
+		signInButton.classList.remove("disable");
+	}
+	signUpButton.onclick = function () {
+		// nameField.style.maxHeight = "60px";
+		title.innerHTML = "Sign Up";
+		signUpButton.classList.remove("disable");
+		signInButton.classList.add("disable");
+	}
+
+
+</script>
     <!-- swiper js link  -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>

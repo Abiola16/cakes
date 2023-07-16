@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ecommerce Website</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="cart.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- cdn icon link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- custom css file  -->
+</head>
+
+<body>
+  <header class="header">
+    <div class="logoContent">
+        <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+        <!-- <h1 class="logoName">Sweet Cake </h1> -->
+    </div>
+
+    <nav class="navbar">
+        <a href="login.html">Home</a>
+        <a href="product.html">Product</a>
+        <!-- <a href="#blogs">blogs</a> -->
+        <a href="gallery.html">Gallery  </a>
+        <!-- <a href="cart.html">review</a> -->
+        <a href="contact.html">Contact</a>
+        <a href="cart.html" class="active"><i class='bx bx-shopping-bag'></i></a>
+        <button id="signOutButton">Log Out</button>
+    </nav>
+
+    <div class="icon">
+        <i class="fas fa-search" id="search"></i>
+        <i class="fas fa-bars" id="menu-bar"></i>
+    </div>
+
+    <div class="search">
+        <input type="text" name="" id="find" placeholder="searchhh here...." onkeyup="searchhh()">
+    </div>
+</header>
+
+
+  <section id="page-header" class="about-header">
+    <h2 class="let">#cart</h2>
+    <p>CHECK PRODUCTS YOU ADDED TO YOUR CART</p>
+  </section>
+
+  <div id="cart-container">
+    <table id="cart-items">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="5">Subtotal:</td>
+          <td id="cart-total">$0</td>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+  <section id="cart-add" class="section-p1">
+    <div id="coupon">
+        <h3>Apply Coupon</h3>
+        <input type="text" placeholder="Enter Your Coupon">
+        <button class="normal">Apply</button>
+    </div>
+
+    <div id="subtotal">
+        <h3>Cart tools</h3>
+        <table>
+            <tr>
+                <td>Cart Subtotal</td>
+                <td>$335</td>
+            </tr>
+            <tr>
+                <td>Shipping</td>
+                <td>Fee</td>
+            </tr>
+            <tr>
+                <td><strong>Total</strong></td>
+                <td><strong>$335</strong></td>
+            </tr>
+        </table>
+        <button class="normal">Proceed to checkout</button>
+    </div>
+</section>
+
+  <section id="newsletter" class="section-p1 section-m1" >
+    <div class="newstext">
+        <h4>Sign Up For Newsletters</h4>
+        <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+    </div>
+    <div class="form">
+        <input type="text" placeholder="Your email address">
+        <button class="normal">Sign Up</button>
+    </div>
+</section>
+
+<footer class="footer" id="contact">
+    <div class="box-container">
+        <div class="mainBox">
+            <div class="content">
+                <a href="#"><img class="fl" src="img/logo.png" alt=""></a>
+                <!-- <h1 class="logoName"> Sweet Cake </h1> -->
+            </div>
+
+            <p>Welcome to our world of culinary delights, where passion meets flavor. We are dedicated to crafting exceptional culinary experiences that leave a lasting impression</p>
+
+        </div>
+        <div class="box">
+            <h3>Quick link</h3>
+            <a href="#"> <i class="fas fa-arrow-right"></i>Home</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i>product</a>
+            <a href="#"> <i class="fas fa-arrow-right"></i>gallery</a>
+            <!-- <a href="#"> <i class="fas fa-arrow-right"></i>review</a> -->
+            <a href="#"> <i class="fas fa-arrow-right"></i>contact</a>
+
+        </div>
+        <div class="box">
+            <h3>Extra link</h3>
+            <a href="#about"> <i class="fas fa-arrow-right"></i>About Us</a>
+            <a href="#reviews"> <i class="fas fa-arrow-right"></i>Reviews</a>
+            <a href="#blogs"> <i class="fas fa-arrow-right"></i>Blogs</a>
+            <a href="#order"> <i class="fas fa-arrow-right"></i>Order</a>
+            <!-- <a href="#"> <i class="fas fa-arrow-right"></i>our  services</a> -->
+        </div>
+        <div class="box">
+            <h3>Contact Info</h3>
+            <a href="#"> <i class="fas fa-phone"></i>+234 808 34 50646</a>
+            <a href="#"> <i class="fas fa-envelope"></i>cakeworld@gmail.com</a>
+
+        </div>
+
+    </div>
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <!-- <a href="#" class="fab fa-pinterest"></a> -->
+    </div>
+    <div class="credit">
+        created by <span>Cake World </span> | all rights reserved ! 
+    </div>
+</footer>
+
+  <!-- Link the JavaScript file for functionality -->
+  <script src="cart.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

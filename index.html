@@ -6,286 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
-        <!-- swiper link  -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-
-    <!-- cdn icon link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <!-- custom css file  -->
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
-    
-    <header class="header">
-        <div class="logoContent">
-            <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
-            <!-- <h1 class="logoName">Sweet Cake </h1> -->
+    <!-- <header>
+        <a href="#" class="branding"></a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="#">Home</a>
+                <a href="#">Home</a>
+                <a href="#">Home</a>
+                <a href="#">Home</a>
+                <a href="#">Home</a>
+            </div>
         </div>
+    </header> -->
 
-        <nav class="navbar">
-            <a href="index.html">home</a>
-            <a href="product.html">product</a>
-            <!-- <a href="#blogs">blogs</a> -->
-            <a href="gallery.html">gallery  </a>
-            <!-- <a href="cart.html">review</a> -->
-            <a href="contact.html">contact</a>
-            <a href="cart.html"><i class='bx bxs-cart'></i></a>
-        </nav>
-
-        <div class="icon">
-            <i class="fas fa-search" id="search"></i>
-            <i class="fas fa-bars" id="menu-bar"></i>
+    <section class="home">
+        <video class="video-slide active" src="video/video 1.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="video/wedding.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="video/birthday.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="video/cupcakes.mp4" autoplay muted loop></video>
+        <!-- <video class="video-slide" src="video/children.mp4" autoplay muted loop></video> -->
+        <div class="content active">
+            <h1>Welcome to <br><span> Cake World!</span></h1>
+            <p>We have perfected the delicate balance between taste and beauty, crafting exquisite treats that are as visually stunning as they are mouthwateringly scrumptious. From classic favorites to innovative creations, our master bakers pour their heart and soul into each and every masterpiece, ensuring that every bite is a moment of sheer culinary delight.</p>
+            <a href="login.html"><button>Sign Up/Login</button></a>
         </div>
-
-        <div class="search">
-            <input type="text" name="" id="find" placeholder="searchhh here...." onkeyup="searchhh()">
-        </div>
-    </header>
-
-    <section class="section">
-        <div class="circle"></div>
         <div class="content">
-            <div class="textBox">
-                <h2>Welcome to Cake World , where every bite is a taste of pure delight!</h2>
-                <p>Welcome to Cake World, where every bite is a taste of pure delight! Indulge in our delectable world of exquisite cakes that are sure to tantalize your taste buds and leave you craving for more.
-               </p>
-                <a href="#">Shop now</a>
-            </div>
-            <div class="imgBox">
-                <img src="img/hero/cake-10.png" class="starbucks">
-            </div>
+            <h1>Wedding <span>Cakes</span></h1>
+            <p>We have perfected the delicate balance between taste and beauty, crafting exquisite treats that are as visually stunning as they are mouthwateringly scrumptious. From classic favorites to innovative creations, our master bakers pour their heart and soul into each and every masterpiece, ensuring that every bite is a moment of sheer culinary delight.</p>
+            <a href="login.html"><button>Sign Up/Login</button></a>
         </div>
-        <ul class="thumb">
-            <li><img src="img/hero/cake-10.png" onclick="imgSlider('img/hero/cake-10.png');changeCircleColor('#6C2C19')"></li>
-            <li><img src="img/hero/cake-2.png" onclick="imgSlider('img/hero/cake-2.png');changeCircleColor('#eb7495')"></li>
-            <li><img src="img/hero/cake-6.png" onclick="imgSlider('img/hero/cake-6.png'); changeCircleColor('#d752b1')"></li>
-        </ul>
-        <ul class="sci">
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-        </ul>
-    </section>
-    
-    <h1 class="heading">About Us</h1>
-    <section class="about sec-p" id="about">
-
-            <div class="image">
-                <img src="img/about-1.png" alt="">
-            </div>
-    
-            <div class="content">
-                <p><span>At <strong>Cake World</strong></span> our philosophy revolves around the notion that every cake we craft should captivate both the eyes and the taste buds. We go beyond the mere delivery of cakes; we aim to deliver happiness, transforming every occasion into an unforgettable experience. Our dedicated team puts their heart and soul into creating cakes that are designed to evoke smiles and bring joy to your celebrations.</p>
-            </div>
-
-    </section>
-    
-    <section class="reviews sec-p" id="reviews">
-
-        <h1 class="heading rev"> Reviews </h1>
-
-        <div class="swiper reviews-slider">
-
-            <div class="swiper-wrapper">
-
-                <div class="swiper-slide slide">
-                    <p>"Absolutely divine! The cakes from Cake World are a true masterpiece. The attention to detail and the delightful flavors make every bite a heavenly experience. The impeccable customer service and timely delivery are an added bonus. Highly recommended!"</p>
-                    <!-- <img src="images/review-1.png" alt=""> -->
-                    <h3>Arowosoba Abdul-Basit</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-
-                <div class="swiper-slide slide">
-                    <p>"Cake World has stolen my heart with their incredible creations. Each cake is a work of art, meticulously designed and flawlessly executed. The taste is equally exceptional, with layers of flavors that leave you craving for more. The team's professionalism and commitment to customer satisfaction make them my go-to choice for all my cake needs." </p>
-                    <!-- <img src="images/review-2.png" alt=""> -->
-                    <h3>Adewuyi Mustapha</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-
-                <div class="swiper-slide slide">
-                    <p>"Cake World is simply phenomenal! Their cakes are the epitome of perfection. From the first contact to the final delivery, their customer service is exemplary. The cakes themselves are moist, delicious, and beautifully decorated. They have truly elevated my celebrations with their stunning creations. I couldn't be happier!" </p>
-                    <!-- <img src="images/review-3.png" alt=""> -->
-                    <h3>Modinat Abdullahi</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-
-                <div class="swiper-slide slide">
-                    <p>"Cake World offers a wide variety of flavors and cake designs that are sure to impress. The taste of their cakes is delightful, and the presentation is visually appealing. The only reason I'm giving four stars instead of five is because the delivery was slightly delayed. Nonetheless, I would still recommend them for their quality cakes."</p>
-                    <!-- <img src="images/review-4.png" alt=""> -->
-                    <h3>Sonusi Tamilore</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-
-                <div class="swiper-slide slide">
-                    <p>"Cake World delivers cakes that are both delicious and visually appealing. The flavors are unique and enjoyable, and the cake designs are creative. I had a small issue with the size of the cake not being exactly as expected, but the customer service was responsive and resolved the matter promptly. Overall, a great cake experience."</p>
-                    <!-- <img src="images/review-5.png" alt=""> -->
-                    <h3>Oyinlade Ayodele</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-
-                <div class="swiper-slide slide">
-                    <p>"Cake World offers a delectable selection of cakes that never disappoint. The flavors are rich and the cakes are moist, creating a delightful taste experience. The only reason I'm giving four stars instead of five is because the pricing is slightly higher compared to other options in the market. Nevertheless, the quality of the cakes makes it worth the splurge for special occasions." </p>
-                    <!-- <img src="images/review-6.png" alt=""> -->
-                    <h3>Samuel Emmanuel</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                </div>
-                
-            </div>
-
-            <div class="swiper-pagination"></div>
+        <div class="content">
+            <h1>Birthday <span>Cakes</span></h1>
+            <p>We have perfected the delicate balance between taste and beauty, crafting exquisite treats that are as visually stunning as they are mouthwateringly scrumptious. From classic favorites to innovative creations, our master bakers pour their heart and soul into each and every masterpiece, ensuring that every bite is a moment of sheer culinary delight.</p>
+            <a href="login.html"><button>Sign Up/Login</button></a>
         </div>
-
-    </section>
-
-    <section class="blogs" id="blogs">
-
-        <div class=" swiper blogs-row">
-            <div class="swiper-wrapper">
-                <div class=" swiper-slide box">
-                    <div class="img">
-                        <img src="img/gallery/gallery10.jpg" alt="">
-                    </div>
-                    <div class="content">
-                        <h3>Caramel Bourbon Vanilla Cupcakes </h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum voluptatum
-                            corporis accusamus aperiam fugiat tempora blanditiis labore dolor aliquid maxime nobis
-                            laborum sed soluta voluptatibus aspernatur natus, dicta quisquam.</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam ab ullam reiciendis sint
-                            eaque at.</p>
-                        <a href="#blogs" class="btn">learn more</a>
-                    </div>
-                </div>
-                <div class=" swiper-slide box">
-                    <div class="img">
-                        <img src="images/blog-img2.png" alt="">
-                    </div>
-                    <div class="content">
-                        <h3>Caramel Bourbon Vanilla Cupcakes </h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum voluptatum
-                            corporis accusamus aperiam fugiat tempora blanditiis labore dolor aliquid maxime nobis
-                            laborum sed soluta voluptatibus aspernatur natus, dicta quisquam.</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam ab ullam reiciendis sint
-                            eaque at.</p>
-                        <a href="#blogs" class="btn">learn more</a>
-                    </div>
-                </div>
-                <div class=" swiper-slide box">
-                    <div class="img">
-                        <img src="images/blog-img2.png" alt="">
-                    </div>
-                    <div class="content">
-                        <h3>Caramel Bourbon Vanilla Cupcakes </h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum voluptatum
-                            corporis accusamus aperiam fugiat tempora blanditiis labore dolor aliquid maxime nobis
-                            laborum sed soluta voluptatibus aspernatur natus, dicta quisquam.</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam ab ullam reiciendis sint
-                            eaque at.</p>
-                        <a href="#blogs" class="btn">learn more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-
-
+        <!-- <div class="content">
+            <h1>Cup Cakes</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis temporibus ex dolores numquam, odio quibusdam quasi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit aliquid molestiae ratione amet voluptatum, eveniet corporis ducimus quaerat rem itaque, quae porro in facilis ullam delectus ut! Voluptatum, ipsum nulla.</p>
+            <a href="#">Learn More</a>
+        </div> -->
+        <div class="content">
+            <h1>Cup <span>Cakes</span></h1>
+            <p>We have perfected the delicate balance between taste and beauty, crafting exquisite treats that are as visually stunning as they are mouthwateringly scrumptious. From classic favorites to innovative creations, our master bakers pour their heart and soul into each and every masterpiece, ensuring that every bite is a moment of sheer culinary delight.</p>
+            <a href="login.html"><button>Sign Up/Login</button></a>
+        </div>
+        <div class="slider-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <!-- <div class="nav-btn"></div> -->
+            <div class="nav-btn"></div>
         </div>
     </section>
-
- 
-    
-
-
-    <footer class="footer" id="contact">
-        <div class="box-container">
-            <div class="mainBox">
-                <div class="content">
-                    <a href="#"><img class="fl" src="img/logo.png" alt=""></a>
-                    <!-- <h1 class="logoName"> Sweet Cake </h1> -->
-                </div>
-
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta accusamus maxime quod.</p>
-
-            </div>
-            <div class="box">
-                <h3>Quick link</h3>
-                <a href="#"> <i class="fas fa-arrow-right"></i>Home</a>
-                <a href="#"> <i class="fas fa-arrow-right"></i>product</a>
-                <a href="#"> <i class="fas fa-arrow-right"></i>gallery</a>
-                <!-- <a href="#"> <i class="fas fa-arrow-right"></i>review</a> -->
-                <a href="#"> <i class="fas fa-arrow-right"></i>contact</a>
-
-            </div>
-            <div class="box">
-                <h3>Reviews</h3>
-                <a href="#reviews
-                "> <i class="fas fa-arrow-right"></i>Account info</a>
-                <a href="#"> <i class="fas fa-arrow-right"></i>order item</a>
-                <a href="#"> <i class="fas fa-arrow-right"></i>privacy policy</a>
-                <a href="#"> <i class="fas fa-arrow-right"></i>payment method</a>
-                <a href="#"> <i class="fas fa-arrow-right"></i>our  services</a>
-            </div>
-            <div class="box">
-                <h3>Contact Info</h3>
-                <a href="#"> <i class="fas fa-phone"></i>+91 12222 34444</a>
-                <a href="#"> <i class="fas fa-envelope"></i>cakeworld@gmail.com</a>
-
-            </div>
-
-        </div>
-        <div class="share">
-            <a href="#" class="fab fa-facebook-f"></a>
-            <a href="#" class="fab fa-twitter"></a>
-            <a href="#" class="fab fa-instagram"></a>
-            <a href="#" class="fab fa-linkedin"></a>
-            <!-- <a href="#" class="fab fa-pinterest"></a> -->
-        </div>
-        <div class="credit">
-            created by <span>Cake World </span> | all rights reserved ! 
-        </div>
-    </footer>
-
-
-
-    <!-- swiper js link  -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
-
+   <script src="welcome.js"></script>
 </body>
 </html>

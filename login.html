@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lolaniyi Ventures</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=GFS+Neohellenic:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <!-- swiper link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- cdn icon link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box" id="authForm">
+            <h1 id="title">Sign <span>Up</span></h1>
+            <form>
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class='bx bxl-gmail'></i>
+                        <input type="email" placeholder="Email" id="userEmail">
+                    </div>
+                    <div class="input-field">
+                        <i class='bx bxs-lock-alt'></i>
+                        <input type="password" placeholder="password" id="userPassword">
+                    </div>
+                    <p>Forgot password? <a href="#">Click here</a></p>
+                </div>
+                <div class="btn-field">
+                    <button type="button" id="signUpButton">Sign Up</button>
+                    <button type="button" class="disable" id="signInButton">Sign In</button>
+                </div>
+            </form>
+        </div>
+        <div id="secretContent">
+            <header class="header">
+                <div class="logoContent">
+                    <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+                    <!-- <h1 class="logoName">Sweet Cake </h1> -->
+                </div>
+
+                <nav class="navbar">
+                    <a href="login.html " class="active">Home</a>
+                    <a href="product.html">Product</a>
+                    <!-- <a href="#blogs">blogs</a> -->
+                    <a href="gallery.html">Gallery </a>
+                    <!-- <a href="cart.html">review</a> -->
+                    <a href="contact.html">Contact</a>
+                    <a href="cart.html"><i class='bx bx-shopping-bag'></i></a>
+                    <button id="signOutButton">Log Out</button>
+                </nav>
+
+                <div class="icon">
+                    <i class="fas fa-search" id="search"></i>
+                    <i class="fas fa-bars" id="menu-bar"></i>
+                </div>
+
+                <div class="search">
+                    <input type="text" name="" id="find" placeholder="searchhh here...." onkeyup="searchhh()">
+                </div>
+            </header>
+
+
+            <section class="section">
+                <div class="circle"></div>
+                <div class="content">
+                    <div class="textBox">
+                        <h2>Welcome to Cake World , where every bite is a taste of pure delight!</h2>
+                        <p>Welcome to Cake World, where every bite is a taste of pure delight! Indulge in our delectable
+                            world of exquisite cakes that are sure to tantalize your taste buds and leave you craving
+                            for more.
+                        </p>
+                        <a href="#">Shop now</a>
+                    </div>
+                    <div class="imgBox">
+                        <img src="img/hero/cake-10.png" class="starbucks">
+                    </div>
+                </div>
+                <ul class="thumb">
+                    <li><img src="img/hero/cake-10.png"
+                            onclick="imgSlider('img/hero/cake-10.png');changeCircleColor('#6C2C19')"></li>
+                    <li><img src="img/hero/cake-2.png"
+                            onclick="imgSlider('img/hero/cake-2.png');changeCircleColor('#eb7495')"></li>
+                    <li><img src="img/hero/cake-6.png"
+                            onclick="imgSlider('img/hero/cake-6.png'); changeCircleColor('#d752b1')"></li>
+                </ul>
+                <ul class="sci">
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </section>
+
+            <div class="div">
+                <h1 class="heading">About Us</h1>
+                <section class="about sec-p" id="about">
+                    <div class="image">
+                        <img src="img/about-1.png" alt="">
+                    </div>
+
+                    <div class="content">
+                        <p><span>At <strong>Cake World</strong></span> our philosophy revolves around the notion that
+                            every cake we craft should captivate both the eyes and the taste buds. We go beyond the mere
+                            delivery of cakes; we aim to deliver happiness, transforming every occasion into an
+                            unforgettable experience.</p>
+                    </div>
+
+                </section>
+            </div>
+
+            <section class="reviews sec-p" id="reviews">
+
+                <h1 class="heading rev"> Reviews </h1>
+
+                <div class="swiper reviews-slider">
+
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide slide">
+                            <p>"Absolutely divine! The cakes from Cake World are a true masterpiece. The attention to
+                                detail and the delightful flavors make every bite a heavenly experience. The impeccable
+                                customer service and timely delivery are an added bonus. Highly recommended!"</p>
+                            <!-- <img src="images/review-1.png" alt=""> -->
+                            <h3>Arowosoba Abdul-Basit</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide slide">
+                            <p>"Cake World has stolen my heart with their incredible creations. Each cake is a work of
+                                art, meticulously designed and flawlessly executed. The taste is equally exceptional,
+                                with layers of flavors that leave you craving for more. The team's professionalism and
+                                commitment to customer satisfaction make them my go-to choice for all my cake needs."
+                            </p>
+                            <!-- <img src="images/review-2.png" alt=""> -->
+                            <h3>Adewuyi Mustapha</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide slide">
+                            <p>"Cake World is simply phenomenal! Their cakes are the epitome of perfection. From the
+                                first contact to the final delivery, their customer service is exemplary. The cakes
+                                themselves are moist, delicious, and beautifully decorated. They have truly elevated my
+                                celebrations with their stunning creations. I couldn't be happier!" </p>
+                            <!-- <img src="images/review-3.png" alt=""> -->
+                            <h3>Modinat Abdullahi</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide slide">
+                            <p>"Cake World offers a wide variety of flavors and cake designs that are sure to impress.
+                                The taste of their cakes is delightful, and the presentation is visually appealing. The
+                                only reason I'm giving four stars instead of five is because the delivery was slightly
+                                delayed. Nonetheless, I would still recommend them for their quality cakes."</p>
+                            <!-- <img src="images/review-4.png" alt=""> -->
+                            <h3>Sonusi Tamilore</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide slide">
+                            <p>"Cake World delivers cakes that are both delicious and visually appealing. The flavors
+                                are unique and enjoyable, and the cake designs are creative. I had a small issue with
+                                the size of the cake not being exactly as expected, but the customer service was
+                                responsive and resolved the matter promptly. Overall, a great cake experience."</p>
+                            <!-- <img src="images/review-5.png" alt=""> -->
+                            <h3>Oyinlade Ayodele</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide slide">
+                            <p>"Cake World offers a delectable selection of cakes that never disappoint. The flavors are
+                                rich and the cakes are moist, creating a delightful taste experience. The only reason
+                                I'm giving four stars instead of five is because the pricing is slightly higher compared
+                                to other options in the market. Nevertheless, the quality of the cakes makes it worth
+                                the splurge for special occasions." </p>
+                            <!-- <img src="images/review-6.png" alt=""> -->
+                            <h3>Samuel Emmanuel</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </section>
+
+            <section class="blogs" id="blogs">
+
+                <div class=" swiper blogs-row">
+                    <div class="swiper-wrapper">
+                        <div class=" swiper-slide box">
+                            <div class="img">
+                                <img src="img/blogs/cupcakes.png" alt="">
+                            </div>
+                            <div class="content">
+                                <h3>The Sweet Truth: Why Children Prefer Cupcakes over Normal Cakes</h3>
+                                <p>There's something about cupcakes that makes them irresistible to children. These handheld treats, adorned with vibrant colors and topped with delightful frosting, have become a staple at birthday parties, school events, and family gatherings. But have you ever wondered why children seem to gravitate towards cupcakes over regular cakes? In this blog post, we'll explore the reasons behind their preference for these miniature delights.</p>
+                                <a href="#blogs" class="btn">Learn more</a>
+                            </div>
+                        </div>
+                        <div class=" swiper-slide box">
+                            <div class="img">
+                                <img src="img/blogs/chocolates cakes.png" alt="">
+                            </div>
+                            <div class="content">
+                                <h3> Decadent Delights: A Guide to Making Irresistible Chocolate Cakes</h3>
+                                <p>Is there anything more indulgent and satisfying than a slice of rich, moist chocolate cake? Whether you're celebrating a special occasion or simply craving a delectable treat, learning how to make a chocolate cake from scratch is a skill that will bring joy to both you and your loved ones. In this blog post, we'll take you through the steps to create a heavenly chocolate cake that will have everyone asking for seconds.</p>
+                                <a href="#blogs" class="btn">Learn more</a>
+                            </div>
+                        </div>
+                        <div class=" swiper-slide box">
+                            <div class="img">
+                                <img src="img/blogs/wedding vcake.png" alt="">
+                            </div>
+                            <div class="content">
+                                <h3>A Sweet Celebration: The Art of Designing Exquisite Wedding Cakes</h3>
+                                <p>Wedding cakes hold a special place in the hearts of couples and guests alike. These stunning creations not only serve as a centerpiece at the reception but also symbolize the joy and sweetness of the couple's union. In this blog post, we'll delve into the art of designing exquisite wedding cakes that leave a lasting impression. From elegant designs to delectable flavors, join us on a journey through the world of wedding cake perfection.</p>
+                                <a href="#blogs" class="btn">Learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+
+
+                </div>
+            </section>
+
+            <section class="order" id="order">
+                <h1 class="heading vv">Order now</h1>
+
+                <form action="mailto:mujeebabiola898@gmail.com" method="post" enctype="text/plain">
+
+                    <div class="box-container">
+
+                        <div class="box">
+                            <div class="inputBox">
+                                <span>Full name</span>
+                                <input type="text" placeholder="enter your name">
+                            </div>
+
+                            <div class="inputBox">
+                                <span>Cake name</span>
+                                <input type="text" placeholder="the cake you want">
+                            </div>
+
+                            <!-- <div class="inputBox">
+                      <span>order details</span>
+                      <input type="text" placeholder="topings">
+                  </div> -->
+
+                            <div class="inputBox">
+                                <span>Your address</span>
+                                <textarea name="" placeholder="enter your address" cols="30" rows="10"></textarea>
+                            </div>
+
+                        </div>
+
+                        <div class="box">
+                            <div class="inputBox">
+                                <span>Phone number</span>
+                                <input type="text" placeholder="your phone number">
+                            </div>
+
+                            <div class="inputBox">
+                                <span>Quantity</span>
+                                <input type="number" placeholder="how many you want">
+                            </div>
+
+                            <div class="inputBox">
+                                <span>When you want it</span>
+                                <input type="datetime-local">
+                            </div>
+
+                            <!-- <div class="inputBox">
+                      <span>our address</span>
+                      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4914.932059366301!2d67.06422978705596!3d24.96907002303995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb340eb31897823%3A0x125deca14e8d41d4!2sMehran%20Ice%20Cream!5e0!3m2!1sen!2s!4v1658145845041!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div> -->
+
+                        </div>
+
+                    </div>
+                    <!-- <input type="submit" value="0rder now" class="btn" value= "Send" class="rr"> -->
+                    <button class="rr">Order now</button>
+                </form>
+
+            </section>
+
+            <section id="newsletter" class="section-p1 section-m1">
+                <div class="newstext">
+                    <h4>Sign Up For Newsletters</h4>
+                    <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+                </div>
+                <div class="form">
+                    <input type="text" placeholder="Your email address">
+                    <button class="normal">Sign Up</button>
+                </div>
+            </section>
+
+            <footer class="footer" id="contact">
+                <div class="box-container">
+                    <div class="mainBox">
+                        <div class="content">
+                            <a href="#"><img class="fl" src="img/logo.png" alt=""></a>
+                            <!-- <h1 class="logoName"> Sweet Cake </h1> -->
+                        </div>
+
+                        <p>Welcome to our world of culinary delights, where passion meets flavor. We are dedicated to
+                            crafting exceptional culinary experiences that leave a lasting impression</p>
+
+                    </div>
+                    <div class="box">
+                        <h3>Quick link</h3>
+                        <a href="#"> <i class="fas fa-arrow-right"></i>Home</a>
+                        <a href="#"> <i class="fas fa-arrow-right"></i>product</a>
+                        <a href="#"> <i class="fas fa-arrow-right"></i>gallery</a>
+                        <!-- <a href="#"> <i class="fas fa-arrow-right"></i>review</a> -->
+                        <a href="#"> <i class="fas fa-arrow-right"></i>contact</a>
+
+                    </div>
+                    <div class="box">
+                        <h3>Extra link</h3>
+                        <a href="#about"> <i class="fas fa-arrow-right"></i>About Us</a>
+                        <a href="#reviews"> <i class="fas fa-arrow-right"></i>Reviews</a>
+                        <a href="#blogs"> <i class="fas fa-arrow-right"></i>Blogs</a>
+                        <a href="#order"> <i class="fas fa-arrow-right"></i>Order</a>
+                        <!-- <a href="#"> <i class="fas fa-arrow-right"></i>our  services</a> -->
+                    </div>
+                    <div class="box">
+                        <h3>Contact Info</h3>
+                        <a href="#"> <i class="fas fa-phone"></i>+234 808 34 50646</a>
+                        <a href="#"> <i class="fas fa-envelope"></i>cakeworld@gmail.com</a>
+
+                    </div>
+
+                </div>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                    <!-- <a href="#" class="fab fa-pinterest"></a> -->
+                </div>
+                <div class="credit">
+                    created by <span>Cake World </span> | all rights reserved !
+                </div>
+            </footer>
+
+
+            <!-- swiper js link  -->
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            <script src="script.js"></script>
+        </div>
+    </div>
+
+
+
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js";
+        import {
+            getAuth,
+            createUserWithEmailAndPassword,
+            signInWithEmailAndPassword,
+            onAuthStateChanged,
+            signOut
+        } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyDfgaJgiRGtwnKV7jJlB_dzX-IwS1jtYto",
+            authDomain: "new-auth-d70e1.firebaseapp.com",
+            projectId: "new-auth-d70e1",
+            storageBucket: "new-auth-d70e1.appspot.com",
+            messagingSenderId: "362454252972",
+            appId: "1:362454252972:web:2dd2945fae2d81b2454e09"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+
+        const userEmail = document.querySelector("#userEmail");
+        const userPassword = document.querySelector("#userPassword");
+        const authForm = document.querySelector("#authForm");
+        const secretContent = document.querySelector("#secretContent");
+        const signUpButton = document.querySelector("#signUpButton");
+        const signInButton = document.querySelector("#signInButton");
+        const signOutButton = document.querySelector("#signOutButton");
+        const container = document.querySelector(".container");
+
+
+        // secretContent.style.display = 'none';
+
+        const userSignUp = async () => {
+            const signUpEmail = userEmail.value;
+            const signUpPassword = userPassword.value;
+            createUserWithEmailAndPassword(auth, signUpEmail, signUpPassword)
+                .then((userCredential) => {
+                    const user = userCredential.user;
+                    console.log(user);
+                    alert("Your account has been created");
+                })
+                .catch((error) => {
+                    const errorCode = error.code;
+                    const errorMessage = error.message;
+                    console.log(errorCode + errorMessage)
+                })
+        }
+
+
+        const userSignIn = async () => {
+            const signInEmail = userEmail.value;
+            const signInPassword = userPassword.value;
+            signInWithEmailAndPassword(auth, signInEmail, signInPassword)
+                .then((userCredential) => {
+                    const user = userCredential.user;
+                    alert("You have sucsessfully logged in");
+                    //  window.location.href = "index.html";
+                })
+                // .catch((error) => {
+                //     const errorCode = error.code;
+                //     const errorMessage = error.message;
+                //     console.log(errorCode + errorMessage)
+                // })
+                .catch(function(error) {
+                // Handle login error
+                var errorCode = error.code;
+                if (errorCode === 'auth/wrong-password') {
+                alert("Incorrect password");
+                } else if (errorCode === 'auth/invalid-email') {
+                alert("Incorrect email");
+                } else {
+                alert(error.message);
+                }
+                });
+        }
+
+
+        const checkAuthState = async () => {
+            onAuthStateChanged(auth, user => {
+                if (user) {
+                    authForm.style.display = 'none';
+                    secretContent.style.display = 'block';
+                }
+                else {
+                    authForm.style.display = 'block';
+                    secretContent.style.display = 'none';
+                }
+            })
+        }
+
+        const userSignOut = async () => {
+            await signOut(auth);
+            window.location.href = "index.html";
+        }
+
+        checkAuthState();
+
+        signUpButton.addEventListener('click', userSignUp);
+        signInButton.addEventListener('click', userSignIn);
+        signOutButton.addEventListener('click', userSignOut);
+    </script>
+
+
+    <script>
+
+        // let signUpButton = document.getElementById("signUpButton");
+        // let signInButton = document.getElementById("signInButton");
+        let nameField = document.getElementById("nameField");
+        let title = document.getElementById("title");
+
+
+        signInButton.onclick = function () {
+            // nameField.style.maxHeight = "0";
+            title.innerHTML = "Sign In";
+            signUpButton.classList.add("disable");
+            signInButton.classList.remove("disable");
+        }
+        signUpButton.onclick = function () {
+            // nameField.style.maxHeight = "60px";
+            title.innerHTML = "Sign Up";
+            signUpButton.classList.remove("disable");
+            signInButton.classList.add("disable");
+        }
+
+
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>

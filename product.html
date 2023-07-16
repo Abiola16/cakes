@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,6 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- custom css file  -->
 </head>
+
 <body>
 
     <header class="header">
@@ -24,13 +26,14 @@
         </div>
 
         <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="product.html">Product</a>
+            <a href="login.html">Home</a>
+            <a href="product.html" class="active">Product</a>
             <!-- <a href="#blogs">blogs</a> -->
-            <a href="gallery.html">Gallery  </a>
+            <a href="gallery.html">Gallery </a>
             <!-- <a href="cart.html">review</a> -->
             <a href="contact.html">Contact</a>
             <a href="cart.html"><i class='bx bx-shopping-bag'></i></a>
+            <button id="signOutButton">Log Out</button>
         </nav>
 
         <div class="icon">
@@ -48,9 +51,419 @@
         <p>CHECK OUT OUR NICE PRODUCTS</p>
     </section>
 
-   
-  
-    <section id="newsletter" class="section-p1 section-m1" >
+    <section class="dd">
+        <!-- <div class="header"> -->
+            <ul class="indicator">
+                <li data-filter="all" class="active"><a href="#">All</a></li>
+                <li data-filter="Wedding Cake"><a href="#">Wedding Cake</a></li>
+                <li data-filter="Birthday Cake"><a href="#">Birthday Cake</a></li>
+                <li data-filter="Graduation Cake"><a href="#">Graduation Cake</a></li>
+                <li data-filter="Celebration Cake"><a href="#">Celebration Cake</a></li>
+                <!-- <li data-filter="Accessories"><a href="#">Accessories</a></li> -->
+            </ul>
+        <!-- </div> -->
+            <div class="filter-condition">
+                <span>View As a</span>
+                <select name="" id="select">
+                    <option value="Default">Default</option>
+                    <option value="LowToHigh">Low to high</option>
+                    <option value="HighToLow">High to low</option>
+                </select>
+            </div>
+
+        <div class="product-field">
+            <ul class="items">
+              
+                <li data-category="" data-price="" class="product">
+                    <div id="product-container"></div>                
+                        <img src="img/products/weddings/ww1.png" alt="" alt="Product 1">
+                    <div class="detail">
+                        <p class="icon">
+                        </p>
+                        <strong>Wedding Cake</strong>
+                       <div class="ff">
+                        <input type="number" min="1" value="1" id="quantity1">
+                        <button onclick="addToCart('img/products/weddings/ww1.png', 'Wedding cake 1', 50000, 'quantity1')">Add to Cart</button>
+                       </div>
+                    </div>
+                    <h4>#5000.00</h4>
+                </li>
+              
+                <!-- <li data-category="" data-price="" class="product">
+                    <div id="product-container"></div>                
+                        <img src="img/products/" alt="" alt="Product 1">
+                    <div class="detail">
+                        <p class="icon">
+                        </p>
+                        <strong>Birthday Cake</strong>
+                       <div class="ff">
+                        <input type="number" min="1" value="1" id="quantity1">
+                        <button onclick="addToCart('img/products/celebrations/cb1.png', 'Wedding cake 2', 25000, 'quantity1')">Add to
+                            Cart</button>
+                       </div>
+                    </div>
+                    <h4>#20,000</h4>
+                </li> -->
+              
+                <li data-category="" data-price="" class="product">
+                    <div id="product-container"></div>                
+                        <img src="img/products/graduation/g1.png" alt="" alt="Product 1">
+                    <div class="detail">
+                        <p class="icon">
+                        </p>
+                        <strong>Graduation Cake</strong>
+                       <div class="ff">
+                        <input type="number" min="1" value="1" id="quantity1">
+                        <button onclick="addToCart('img/products/graduation/g1.png', 'Graduation cake 1', 25000, 'quantity1')">Add to
+                            Cart</button>
+                       </div>
+                    </div>
+                    <h4>#2300.00</h4>
+                </li>
+              
+                <li data-category="" data-price="" class="product">
+                    <div id="product-container"></div>                
+                        <img src="img/products/celebrations/cb1.png" alt="" alt="Product 1">
+                    <div class="detail">
+                        <p class="icon">
+                        </p>
+                        <strong>Celebration Cake</strong>
+                       <div class="ff">
+                        <input type="number" min="1" value="1" id="quantity1">
+                        <button onclick="addToCart('img/products/celebrations/cb1.png', 'Celebration cake 1', 20000, 'quantity1')">Add to
+                            Cart</button>
+                       </div>
+                    </div>
+                    <h4>#2000.00</h4>
+                </li>
+              
+                <li data-category="" data-price="" class="product">
+                    <div id="product-container"></div>                
+                        <img src="img/products/weddings/ww2.png" alt="" alt="Product 1">
+                    <div class="detail">
+                        <p class="icon">
+                        </p>
+                        <strong>Wedding Cake</strong>
+                       <div class="ff">
+                        <input type="number" min="1" value="1" id="quantity1">
+                        <button onclick="addToCart('img/products/weddings/ww2.png', 'Wedding cake 2', 55000, 'quantity1')">Add to
+                            Cart</button>
+                       </div>
+                    </div>
+                    <h4>#5000.00</h4>
+                </li>
+              
+                <!-- <li data-category="" data-price="" class="product">
+                    <div id="product-container"></div>                
+                        <img src="img/products/" alt="" alt="Product 1">
+                    <div class="detail">
+                        <p class="icon">
+                        </p>
+                        <strong>Birthday Cake</strong>
+                       <div class="ff">
+                        <input type="number" min="1" value="1" id="quantity1">
+                        <button onclick="addToCart('img/products/celebrations/cb1.png', 'Wedding cake 2', 25000, 'quantity1')">Add to
+                            Cart</button>
+                       </div>
+                    </div>
+                    <h4>#20,000</h4>
+                </li> -->
+              
+                <li data-category="" data-price="" class="product">
+                    <div id="product-container"></div>                
+                        <img src="img/products/graduation/g2.png" alt="" alt="Product 1">
+                    <div class="detail">
+                        <p class="icon">
+                        </p>
+                        <strong>Graduation Cake</strong>
+                       <div class="ff">
+                        <input type="number" min="1" value="1" id="quantity1">
+                        <button onclick="addToCart('img/products/graduation/g2.png', 'Graduation cake 2', 21000, 'quantity1')">Add to
+                            Cart</button>
+                       </div>
+                    </div>
+                    <h4>#2100.00</h4>
+                </li>
+              
+                <li data-category="" data-price="" class="product">
+                    <div id="product-container"></div>                
+                        <img src="img/products/celebrations/cb2.png" alt="" alt="Product 1">
+                    <div class="detail">
+                        <p class="icon">
+                        </p>
+                        <strong>Celebration Cake</strong>
+                       <div class="ff">
+                        <input type="number" min="1" value="1" id="quantity1">
+                        <button onclick="addToCart('img/products/celebrations/cb2.png', 'Celebration cake 2', 23000, 'quantity1')">Add to
+                            Cart</button>
+                       </div>
+                    </div>
+                    <h4>#1000.00</h4>
+                </li>
+
+                <li data-category="" data-price="" class="product">
+                    <div id="product-container"></div>                
+                        <img src="img/products/weddings/ww3.png" alt="" alt="Product 1">
+                    <div class="detail">
+                        <p class="icon">
+                        </p>
+                        <strong>Wedding Cake</strong>
+                       <div class="ff">
+                        <input type="number" min="1" value="1" id="quantity1">
+                        <button onclick="addToCart('img/products/weddings/ww3.png', 'Wedding cake 3', 52000, 'quantity1')">Add to
+                            Cart</button>
+                       </div>
+                    </div>
+                    <h4>#4900.00</h4>
+                </li>
+              
+                <!-- <li data-category="" data-price="" class="product">
+                    <div id="product-container"></div>                
+                        <img src="img/products/" alt="" alt="Product 1">
+                    <div class="detail">
+                        <p class="icon">
+                        </p>
+                        <strong>Birthday Cake</strong>
+                       <div class="ff">
+                        <input type="number" min="1" value="1" id="quantity1">
+                        <button onclick="addToCart('img/products/celebrations/cb1.png', 'Wedding cake 2', 25000, 'quantity1')">Add to
+                            Cart</button>
+                       </div>
+                    </div>
+                    <h4>#20,000</h4>
+                </li> -->
+              
+                <li data-category="" data-price="" class="product">
+                    <div id="product-container"></div>                
+                        <img src="img/products/graduation/g3.png" alt="" alt="Product 1">
+                    <div class="detail">
+                        <p class="icon">
+                        </p>
+                        <strong>Graduation Cake</strong>
+                       <div class="ff">
+                        <input type="number" min="1" value="1" id="quantity1">
+                        <button onclick="addToCart('img/products/graduation/g3.png', 'Graduation cake 3', 27000, 'quantity1')">Add to
+                            Cart</button>
+                       </div>
+                    </div>
+                    <h4>#2700.00</h4>
+                </li>
+              
+                <li data-category="" data-price="" class="product">
+                    <div id="product-container"></div>                
+                        <img src="img/products/celebrations/cb3.png" alt="" alt="Product 1">
+                    <div class="detail">
+                        <p class="icon">
+                        </p>
+                        <strong>Celebration Cake</strong>
+                       <div class="ff">
+                        <input type="number" min="1" value="1" id="quantity1">
+                        <button onclick="addToCart('img/products/celebrations/cb3.png', 'Celebration cake 3', 24000, 'quantity1')">Add to
+                            Cart</button>
+                       </div>
+                    </div>
+                    <h4>#4500.00</h4>
+                </li>
+
+                <li data-category="" data-price="" class="product">
+                    <div id="product-container"></div>                
+                        <img src="img/products/weddings/ww4.png" alt="" alt="Product 1">
+                    <div class="detail">
+                        <p class="icon">
+                        </p>
+                        <strong>Wedding Cake</strong>
+                       <div class="ff">
+                        <input type="number" min="1" value="1" id="quantity1">
+                        <button onclick="addToCart('img/products/weddings/ww4.png', 'Wedding cake 4', 59000, 'quantity1')">Add to
+                            Cart</button>
+                       </div>
+                    </div>
+                    <h4>#59000.00</h4>
+                </li>
+              
+                <!-- <li data-category="" data-price="" class="product">
+                    <div id="product-container"></div>                
+                        <img src="img/products/" alt="" alt="Product 1">
+                    <div class="detail">
+                        <p class="icon">
+                        </p>
+                        <strong>Birthday Cake</strong>
+                       <div class="ff">
+                        <input type="number" min="1" value="1" id="quantity1">
+                        <button onclick="addToCart('img/products/celebrations/cb1.png', 'Wedding cake 2', 25000, 'quantity1')">Add to
+                            Cart</button>
+                       </div>
+                    </div>
+                    <h4>#20,000</h4>
+                </li> -->
+              
+                <li data-category="" data-price="" class="product">
+                    <div id="product-container"></div>                
+                        <img src="img/products/graduation/g4.png" alt="" alt="Product 1">
+                    <div class="detail">
+                        <p class="icon">
+                        </p>
+                        <strong>Graduation Cake</strong>
+                       <div class="ff">
+                        <input type="number" min="1" value="1" id="quantity1">
+                        <button onclick="addToCart('img/products/graduation/g4.png', 'Graduation cake 4', 23000, 'quantity1')">Add to
+                            Cart</button>
+                       </div>
+                    </div>
+                    <h4>#23000.00</h4>
+                </li>
+              
+                <li data-category="" data-price="" class="product">
+                    <div id="product-container"></div>                
+                        <img src="img/products/celebrations/cb4.png" alt="" alt="Product 1">
+                    <div class="detail">
+                        <p class="icon">
+                        </p>
+                        <strong>Celebration Cake</strong>
+                       <div class="ff">
+                        <input type="number" min="1" value="1" id="quantity1">
+                        <button onclick="addToCart('img/products/celebrations/cb4.png', 'Celebration cake 4', 26000, 'quantity1')">Add to
+                            Cart</button>
+                       </div>
+                    </div>
+                    <h4>#26000.00</h4>
+                </li>
+
+                <li data-category="" data-price="" class="product">
+                    <div id="product-container"></div>                
+                        <img src="img/products/weddings/ww5.png" alt="" alt="Product 1">
+                    <div class="detail">
+                        <p class="icon">
+                        </p>
+                        <strong>Wedding Cake</strong>
+                       <div class="ff">
+                        <input type="number" min="1" value="1" id="quantity1">
+                        <button onclick="addToCart('img/products/weddings/ww5.png', 'Wedding cake 5', 60000, 'quantity1')">Add to
+                            Cart</button>
+                       </div>
+                    </div>
+                    <h4>#60000.00</h4>
+                </li>
+              
+                <!-- <li data-category="" data-price="" class="product">
+                    <div id="product-container"></div>                
+                        <img src="img/products/" alt="" alt="Product 1">
+                    <div class="detail">
+                        <p class="icon">
+                        </p>
+                        <strong>Birthday Cake</strong>
+                       <div class="ff">
+                        <input type="number" min="1" value="1" id="quantity1">
+                        <button onclick="addToCart('img/products/celebrations/cb1.png', 'Wedding cake 2', 25000, 'quantity1')">Add to
+                            Cart</button>
+                       </div>
+                    </div>
+                    <h4>#20,000</h4>
+                </li> -->
+              
+                <li data-category="" data-price="" class="product">
+                    <div id="product-container"></div>                
+                        <img src="img/products/graduation/g5.png" alt="" alt="Product 1">
+                    <div class="detail">
+                        <p class="icon">
+                        </p>
+                        <strong>Graduation Cake</strong>
+                       <div class="ff">
+                        <input type="number" min="1" value="1" id="quantity1">
+                        <button onclick="addToCart('img/products/graduation/g5.png', 'Graduation cake 5', 33000, 'quantity1')">Add to
+                            Cart</button>
+                       </div>
+                    </div>
+                    <h4>#33000.00</h4>
+                </li>
+              
+                <li data-category="" data-price="" class="product">
+                    <div id="product-container"></div>                
+                        <img src="img/products/celebrations/cb5.png" alt="" alt="Product 1">
+                    <div class="detail">
+                        <p class="icon">
+                        </p>
+                        <strong>Celebration Cake</strong>
+                       <div class="ff">
+                        <input type="number" min="1" value="1" id="quantity1">
+                        <button onclick="addToCart('img/products/celebrations/cb5.png', 'Celebration cake 5', 30000, 'quantity1')">Add to
+                            Cart</button>
+                       </div>
+                    </div>
+                    <h4>#30000.00</h4>
+                </li>
+
+                <li data-category="" data-price="" class="product">
+                    <div id="product-container"></div>                
+                        <img src="img/products/weddings/ww6.png" alt="" alt="Product 1">
+                    <div class="detail">
+                        <p class="icon">
+                        </p>
+                        <strong>Wedding Cake</strong>
+                       <div class="ff">
+                        <input type="number" min="1" value="1" id="quantity1">
+                        <button onclick="addToCart('img/products/weddings/ww6.png', 'Wedding cake 6', 65000, 'quantity1')">Add to
+                            Cart</button>
+                       </div>
+                    </div>
+                    <h4>#65000.00</h4>
+                </li>
+              
+                <!-- <li data-category="" data-price="" class="product">
+                    <div id="product-container"></div>                
+                        <img src="img/products/" alt="" alt="Product 1">
+                    <div class="detail">
+                        <p class="icon">
+                        </p>
+                        <strong>Birthday Cake</strong>
+                       <div class="ff">
+                        <input type="number" min="1" value="1" id="quantity1">
+                        <button onclick="addToCart('img/products/celebrations/cb1.png', 'Wedding cake 2', 25000, 'quantity1')">Add to
+                            Cart</button>
+                       </div>
+                    </div>
+                    <h4>#20,000</h4>
+                </li> -->
+              
+                <li data-category="" data-price="" class="product">
+                    <div id="product-container"></div>                
+                        <img src="img/products/graduation/g6.png" alt="" alt="Product 1">
+                    <div class="detail">
+                        <p class="icon">
+                        </p>
+                        <strong>Graduation Cake</strong>
+                       <div class="ff">
+                        <input type="number" min="1" value="1" id="quantity1">
+                        <button onclick="addToCart('img/products/graduation/g6.png', 'Graduation cake 6', 30000, 'quantity1')">Add to
+                            Cart</button>
+                       </div>
+                    </div>
+                    <h4>#30000.00</h4>
+                </li>
+              
+                <li data-category="" data-price="" class="product">
+                    <div id="product-container"></div>                
+                        <img src="img/products/celebrations/cb6.png" alt="" alt="Product 1">
+                    <div class="detail">
+                        <p class="icon">
+                        </p>
+                        <strong>Celebration Cake</strong>
+                       <div class="ff">
+                        <input type="number" min="1" value="1" id="quantity1">
+                        <button onclick="addToCart('img/products/celebrations/cb6.png', 'Celebration cake 6', 27000, 'quantity1')">Add to
+                            Cart</button>
+                       </div>
+                    </div>
+                    <h4>#27,000.00</h4>
+                </li>
+
+        
+                
+            </ul>
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
         <div class="newstext">
             <h4>Sign Up For Newsletters</h4>
             <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
@@ -71,7 +484,8 @@
                     <!-- <h1 class="logoName"> Sweet Cake </h1> -->
                 </div>
 
-                <p>Welcome to our world of culinary delights, where passion meets flavor. We are dedicated to crafting exceptional culinary experiences that leave a lasting impression</p>
+                <p>Welcome to our world of culinary delights, where passion meets flavor. We are dedicated to crafting
+                    exceptional culinary experiences that leave a lasting impression</p>
 
             </div>
             <div class="box">
@@ -107,11 +521,13 @@
             <!-- <a href="#" class="fab fa-pinterest"></a> -->
         </div>
         <div class="credit">
-            created by <span>Cake World </span> | all rights reserved ! 
+            created by <span>Cake World </span> | all rights reserved !
         </div>
     </footer>
 
     <script src="script.js"></script>
     <script src="porduct.js"></script>
+    
 </body>
+
 </html>
